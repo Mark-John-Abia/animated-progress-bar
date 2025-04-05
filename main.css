@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #555;
+}
+
+.container {
+    width: 400px;
+}
+
+.progress {
+    padding: 6px;
+    background: #00000040;
+    border-radius: 30px;
+    border: 1px solid firebrick;
+}
+
+.progress-bar {
+    height: 18px;
+    background-color: #bd47ef;
+    border-radius: 30px;
+    animation: progressAnimation 7s;
+}
+
+@keyframes progressAnimation {
+    0% { width: 0%; }
+    80% { width: 85%; }
+    100% { width: 100%; }
+}
